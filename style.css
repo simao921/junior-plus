@@ -267,7 +267,23 @@ input,textarea,select,button{font:inherit}
 .rev-right{opacity:0;transform:translateX(32px);transition:opacity var(--t3) var(--ease),transform var(--t3) var(--ease)}
 .rev-right.in{opacity:1;transform:none}
 
-/* ── 11. AURORA BG ──────────────────────────────────────────────── */
+/* ── 11. HERO ENTER ANIMATIONS (pure CSS — no JS needed) ──────────── */
+/* These fire immediately on page load without IntersectionObserver */
+.ha {
+  opacity:0;
+  animation: heroIn 0.7s var(--ease) forwards;
+}
+.ha[data-d="1"] { animation-delay:100ms; }
+.ha[data-d="2"] { animation-delay:220ms; }
+.ha[data-d="3"] { animation-delay:360ms; }
+.ha[data-d="4"] { animation-delay:500ms; }
+
+@keyframes heroIn {
+  from { opacity:0; transform:translateY(26px); }
+  to   { opacity:1; transform:none; }
+}
+
+/* ── 12. AURORA BG ──────────────────────────────────────────────── */
 .aurora{
   position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden;
 }
@@ -285,7 +301,7 @@ input,textarea,select,button{font:inherit}
   100%{transform:translate(0,0) scale(1)}
 }
 
-/* ── 12. HERO ───────────────────────────────────────────────────── */
+/* ── 13. HERO ───────────────────────────────────────────────────── */
 .hero{
   position:relative;min-height:100svh;
   display:grid;align-items:center;

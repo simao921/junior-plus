@@ -44,23 +44,23 @@ window.PAGE_HOME = `
   <div class="hero-grid-lines" aria-hidden="true"></div>
 
   <div class="hero-content">
-    <div class="eyebrow rev" aria-label="Empresa de desenvolvimento pessoal">
+    <div class="eyebrow ha" aria-label="Empresa de desenvolvimento pessoal">
       <span class="eyebrow-dot" aria-hidden="true"></span>
       Desenvolvimento Holístico &nbsp;·&nbsp; Portugal &nbsp;·&nbsp; 2026
     </div>
 
-    <h1 class="hero-h1 rev">
+    <h1 class="hero-h1 ha" data-d="1">
       O teu nível<br/>
       <em class="line-em">mais alto</em><br/>
       começa aqui.
     </h1>
 
-    <p class="hero-sub rev">
+    <p class="hero-sub ha" data-d="2">
       Profissional. Pessoal. Académico.<br/>
       Três dimensões de crescimento.<br/>Uma transformação completa.
     </p>
 
-    <div class="hero-actions rev">
+    <div class="hero-actions ha" data-d="3">
       <a href="#/contacto" data-link class="btn btn-gold" id="heroCta">
         <span>Inicia a Tua Jornada</span>
         <span class="arr">→</span>
@@ -70,15 +70,15 @@ window.PAGE_HOME = `
   </div>
 
   <div class="hero-stats" aria-label="Resultados">
-    <div class="h-stat rev g-border">
+    <div class="h-stat ha g-border" data-d="2">
       <div class="h-stat-n">500<sup>+</sup></div>
       <div class="h-stat-l">Clientes Transformados</div>
     </div>
-    <div class="h-stat rev g-border" data-d="1">
+    <div class="h-stat ha g-border" data-d="3">
       <div class="h-stat-n">95<sup>%</sup></div>
       <div class="h-stat-l">Taxa de Satisfação</div>
     </div>
-    <div class="h-stat rev g-border" data-d="2">
+    <div class="h-stat ha g-border" data-d="4">
       <div class="h-stat-n">8<sup>anos</sup></div>
       <div class="h-stat-l">De Experiência</div>
     </div>
