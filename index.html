@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junior+ | Eleva o Teu Potencial</title>
+  <meta name="description" content="A Junior+ leva-te ao teu melhor nível — profissional, pessoal e académico. Coaching, mentoria, formação e plataforma online em Portugal." />
+  <meta property="og:title" content="Junior+ | Eleva o Teu Potencial" />
+  <meta property="og:description" content="Coaching, mentoria, formação e crescimento pessoal para quem recusa o ordinário." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Noise grain -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Aurora blobs -->
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+    <div class="aurora-blob"></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cur-dot"  id="curDot"  aria-hidden="true"></div>
+  <div class="cur-ring" id="curRing" aria-hidden="true"></div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Navegação principal">
+      <a href="#/" class="nav-logo" data-link aria-label="Junior+ — Início">
+        <span>Junior</span><em>+</em>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#/sobre"     class="nav-link" data-link>Sobre</a></li>
+        <li><a href="#/servicos"  class="nav-link" data-link>Serviços</a></li>
+        <li><a href="#/metodo"    class="nav-link" data-link>Método</a></li>
+        <li><a href="#/historias" class="nav-link" data-link>Histórias</a></li>
+        <li><a href="#/contacto"  class="nav-link" data-link>Contacto</a></li>
+      </ul>
+
+      <a href="#/contacto" class="btn-nav" data-link id="navCta">Começa Agora</a>
+
+      <button class="hamburger" id="hamburger"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-drawer" id="mobileDrawer" role="navigation" aria-label="Menu móvel">
+      <ul role="list">
+        <li><a href="#/"          data-link class="mob-link">Início</a></li>
+        <li><a href="#/sobre"     data-link class="mob-link">Sobre</a></li>
+        <li><a href="#/servicos"  data-link class="mob-link">Serviços</a></li>
+        <li><a href="#/metodo"    data-link class="mob-link">Método</a></li>
+        <li><a href="#/historias" data-link class="mob-link">Histórias</a></li>
+        <li><a href="#/contacto"  data-link class="mob-link mob-cta">Começa Agora →</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ── ROUTER OUTLET ── -->
+  <main id="app" role="main" aria-live="polite"></main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="f-brand">
+          <a href="#/" data-link class="nav-logo" aria-label="Junior+ início">
+            <span>Junior</span><em>+</em>
+          </a>
+          <p>Desenvolvemos pessoas.<br/>Transformamos vidas.</p>
+          <div class="f-socials" role="list" aria-label="Redes sociais">
+            <a href="#" class="soc" role="listitem" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="soc" role="listitem" aria-label="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10v7M7 7v.5M12 17v-4.5c0-1.5 1-2.5 2.5-2.5S17 11 17 12.5V17M12 10v7"/></svg>
+            </a>
+            <a href="#" class="soc" role="listitem" aria-label="TikTok">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="f-col">
+          <h4>Páginas</h4>
+          <ul role="list">
+            <li><a href="#/"          data-link>Início</a></li>
+            <li><a href="#/sobre"     data-link>Sobre Nós</a></li>
+            <li><a href="#/servicos"  data-link>Serviços</a></li>
+            <li><a href="#/metodo"    data-link>Método</a></li>
+            <li><a href="#/historias" data-link>Histórias</a></li>
+            <li><a href="#/contacto"  data-link>Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="f-col">
+          <h4>Contacto</h4>
+          <address>
+            <p><span aria-label="Email">✉</span><a href="mailto:hello@juniorplus.pt">hello@juniorplus.pt</a></p>
+            <p><span aria-label="Telefone">✆</span><a href="tel:+351910000000">+351 910 000 000</a></p>
+            <p><span aria-label="Local">⌖</span>Lisboa, Portugal</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bar">
+        <p>&copy; 2026 Junior+. Todos os direitos reservados.</p>
+        <div class="f-legal">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pages.js"></script>
+  <script src="router.js"></script>
+</body>
+</html>

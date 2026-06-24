@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# npm (se vier a usar)
+node_modules/
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+.cache/
